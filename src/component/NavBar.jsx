@@ -7,7 +7,7 @@ function NavBar() {
         <div className="navbar bg-base-100 shadow-b-sm container mx-auto">
            
             <div className="navbar-start">
-                <a className=" text-2xl font-bold ">disiTools</a>
+                <a className=" text-3xl font-bold text-[#a350fb]">disiTools</a>
             </div>
             <div className="navbar-center ">
                 <ul className="menu menu-horizontal px-1">
@@ -18,9 +18,12 @@ function NavBar() {
                     <li><a>FAQ</a></li>
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end space-x-2">
+                
+      
                 <MdOutlineShoppingCart />
-                <a className="btn">Get Started</a>
+                <a >Login</a>
+                <a className="btn rounded-full bg-linear-to-t from-[#4f39fb] to-[#9514fa] text-white">Get Started</a>
             </div>
             
         </div>
