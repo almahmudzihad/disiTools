@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ProDesign Studio",
+    "description": "Advanced design suite for creating stunning visuals and prototypes.",
+    "price": "$29",
+    "period": "per month",
+    "tagType": "Design",
+    "features": ["Drag-and-drop editor", "AI-powered templates", "Collaboration tools"],
+    "icon": "🎨",
+    "button": "Buy Now"
+  },
+  {
+    "name": "CodeMaster IDE",
+    "description": "Powerful coding environment with real-time debugging and AI suggestions.",
+    "price": "$49",
+    "period": "per month",
+    "tagType": "Development",
+    "features": ["Multi-language support", "Version control integration", "Smart autocomplete"],
+    "icon": "💻",
+    "button": "Buy Now"
+  },
+  {
+    "name": "MarketGenius",
+    "description": "Digital marketing automation tool to boost campaigns and track analytics.",
+    "price": "$39",
+    "period": "per month",
+    "tagType": "Marketing",
+    "features": ["Email automation", "SEO insights", "Social media scheduler"],
+    "icon": "📈",
+    "button": "Buy Now"
+  },
+  {
+    "name": "SecureVault",
+    "description": "Enterprise-grade cloud storage with encryption and team sharing.",
+    "price": "$19",
+    "period": "per month",
+    "tagType": "Storage",
+    "features": ["End-to-end encryption", "Unlimited file sharing", "Cross-device sync"],
+    "icon": "🔒",
+    "button": "Buy Now"
+  },
+  {
+    "name": "TaskFlow Pro",
+    "description": "Project management tool to organize tasks and streamline workflows.",
+    "price": "$25",
+    "period": "per month",
+    "tagType": "Productivity",
+    "features": ["Kanban boards", "Time tracking", "Team collaboration"],
+    "icon": "✅",
+    "button": "Buy Now"
+  },
+  {
+    "name": "InsightAI",
+    "description": "AI-powered analytics platform for smarter business decisions.",
+    "price": "$59",
+    "period": "per month",
+    "tagType": "Analytics",
+    "features": ["Predictive insights", "Custom dashboards", "Data visualization"],
+    "icon": "🤖",
+    "button": "Buy Now"
+  }
+]

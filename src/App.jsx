@@ -5,20 +5,27 @@ import NavBar from './component/NavBar'
 import Hero from './component/Hero'
 import Rating from './component/Rating'
 import GetStart from './component/GetStart'
-import ReadyTo from './assets/ReadyTo'
+import ReadyTo from './component/ReadyTo'
 import Footer from './component/Footer'
-import Pricing from './Pricing'
+import Pricing from './component/Pricing'
 import PremiumTools from './component/PremiumTools'
 
+
+const fetchData = async () =>{
+  const res = await fetch("/card.json");
+  return res.json();
+}
+const cardData = fetchData();
+
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
       <NavBar></NavBar>
       <Hero />
       <Rating />
-      <PremiumTools />
+      <PremiumTools cardData={cardData} />
 
       <GetStart />
       <Pricing />

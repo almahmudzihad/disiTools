@@ -17,7 +17,7 @@ If you are developing a production application, we recommend using TypeScript wi
 bg-linear-to-t from-sky-500 to-indigo-500
 
 bg-linear-to-t from-sky-500 to-indigo-500
-bg-linear-to-t from-[#4f39fb] to-[#9514fa]
+bg-linear-to-r from-[#4f39fb] to-[#9514fa]
 
 
 section titel & discr

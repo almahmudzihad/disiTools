@@ -6,7 +6,7 @@ function Pricing() {
             <div className='container mx-auto'>
                 <div className='py-20 text-center'>
                     <div className="py-16">
-                        <h1 className='text-3xl font-bold py-4'>Simple, Transparent Pricing</h1>
+                        <h1 className='text-4xl font-bold py-4'>Simple, Transparent Pricing</h1>
                         <p className='text-gray-500'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                     </div>
                 

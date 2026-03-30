@@ -5,7 +5,7 @@ function ReadyTo() {
         <div className='bg-linear-to-r from-[#4f39fb] to-[#9514fa]'>
             <div className='py-20'>
             <div className='p-16 text-center'>
-                <h1 className='text-3xl font-bold py-4 text-white'>Ready to Transform Your Workflow?</h1>
+                <h1 className='text-4xl font-bold py-4 text-white'>Ready to Transform Your Workflow?</h1>
                  <p className='text-gray-300'>Ready to Transform Your Workflow? Join thousands of professionals who are already using Digitools to work smarter. <br></br>Start your free trial today.</p>
             </div>
             <div className='text-center'>

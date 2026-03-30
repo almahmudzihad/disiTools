@@ -5,7 +5,7 @@ function GetStart() {
         <div className='bg-[#f9fafc]'>
             <div className=' container mx-auto py-20'>
                 <div className='py-16 text-center'>
-                    <h1 className='text-3xl font-bold py-4'>Get Started in 3 Steps</h1>
+                    <h1 className='text-4xl font-bold py-4'>Get Started in 3 Steps</h1>
                     <p className='text-gray-500'>Start using premium digital tools in minutes, not hours.</p>
                 </div>
 
