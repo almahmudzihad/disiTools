@@ -2,7 +2,7 @@ import React from 'react'
 
 function ReadyTo() {
     return (
-        <div className='bg-linear-to-t from-[#4f39fb] to-[#9514fa]'>
+        <div className='bg-linear-to-r from-[#4f39fb] to-[#9514fa]'>
             <div className='py-20'>
             <div className='p-16 text-center'>
                 <h1 className='text-3xl font-bold py-4 text-white'>Ready to Transform Your Workflow?</h1>
