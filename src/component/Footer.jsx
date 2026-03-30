@@ -73,7 +73,7 @@ function Footer() {
 
                 <footer className="footer sm:footer-horizontal   text-gray-300 p-4">
                 <aside>
-                    <p> © {new Date().getFullYear()} Digitools. All rights reserved.</p>
+                    <p>Zihad © {new Date().getFullYear()} Digitools. All rights reserved.</p>
                 </aside>
                 <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
                     <a className="link link-hover">Privacy Policy           Terms of Service           Cookies</a>
