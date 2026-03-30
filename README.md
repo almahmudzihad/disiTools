@@ -18,3 +18,10 @@ bg-linear-to-t from-sky-500 to-indigo-500
 
 bg-linear-to-t from-sky-500 to-indigo-500
 bg-linear-to-t from-[#4f39fb] to-[#9514fa]
+
+
+section titel & discr
+<div className='py-20 text-center'>
+     <h1 className='text-3xl font-bold py-4'>Get Started in 3 Steps</h1>
+      <p className='text-gray-500'>Start using premium digital tools in minutes, not hours.</p>
+  </div>

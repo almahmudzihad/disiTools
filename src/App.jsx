@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+
 import './App.css'
 import NavBar from './component/NavBar'
 import Hero from './component/Hero'
 import Rating from './component/Rating'
+import GetStart from './component/GetStart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +14,8 @@ function App() {
       <NavBar></NavBar>
       <Hero />
       <Rating />
+
+      <GetStart />
       
     </>
   )
