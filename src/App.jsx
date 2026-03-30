@@ -7,6 +7,7 @@ import Rating from './component/Rating'
 import GetStart from './component/GetStart'
 import ReadyTo from './assets/ReadyTo'
 import Footer from './component/Footer'
+import Pricing from './Pricing'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Rating />
 
       <GetStart />
+      <Pricing />
       <ReadyTo />
       <Footer />
 
