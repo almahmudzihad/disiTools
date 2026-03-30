@@ -10,7 +10,7 @@ function ReadyTo() {
             </div>
             <div className='text-center'>
                 <button className="btn  px-5 py-6 rounded-full bg-white">Explore Products</button>
-                <button className="btn border-white btn-outline rounded-full  px-5 py-6 ml-2">View Pricing</button> 
+                <button className="btn border-white btn-outline rounded-full text-white px-5 py-6 ml-2">View Pricing</button> 
             </div>
             <p className='text-gray-300 text-center pt-8'>14-day free trial • No credit card required • Cancel anytime</p>
             </div>
