@@ -3,10 +3,10 @@ import Card from './Card';
 import BuyCardList from './BuyCardList';
 //import BuyCardList from './BuyCardList';
 
-function PremiumTools({cardData}) {
+function PremiumTools({cardData, cardBuy, setCardBuy}) {
     const card = use(cardData);
     const [tabName, setTabName] =useState('products');
-    const [cardBuy, setCardBuy] = useState([]);
+    
     
     
     

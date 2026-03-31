@@ -19,14 +19,15 @@ const fetchData = async () =>{
 const cardData = fetchData();
 
 function App() {
+  const [cardBuy, setCardBuy] = useState([]);
   
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar cardBuy={cardBuy} />
       <Hero />
       <Rating />
-      <PremiumTools cardData={cardData} />
+      <PremiumTools cardData={cardData} cardBuy={cardBuy} setCardBuy={setCardBuy} />
 
       <GetStart />
       <Pricing />
