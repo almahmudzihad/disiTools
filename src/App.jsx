@@ -9,6 +9,7 @@ import ReadyTo from './component/ReadyTo'
 import Footer from './component/Footer'
 import Pricing from './component/Pricing'
 import PremiumTools from './component/PremiumTools'
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const fetchData = async () =>{
@@ -31,6 +32,7 @@ function App() {
       <Pricing />
       <ReadyTo />
       <Footer />
+      <ToastContainer />
 
       
       

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify';
 
 
 function Card({data, setCardBuy, cardBuy}) {
@@ -9,9 +10,11 @@ function Card({data, setCardBuy, cardBuy}) {
 
         const isfound = cardBuy.find(item => item.name === data.name);
         if(isfound){
-            alert('ase')
+            toast('Already added!');
+            
             return
         }
+        toast('added!');
         setCardBuy([...cardBuy, data])
         
     }
