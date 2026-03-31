@@ -6,7 +6,8 @@ import BuyCardList from './BuyCardList';
 function PremiumTools({cardData}) {
     const card = use(cardData);
     const [tabName, setTabName] =useState('products');
-    console.log(tabName)
+    const [cardBuy, setCardBuy] = useState([]);
+    
     
     
     return (
@@ -22,19 +23,19 @@ function PremiumTools({cardData}) {
                  onClick={()=>setTabName('products')}
                  defaultChecked/>
 
-                <input type="radio" name="my_tabs_1" className="tab" aria-label="Card"  
+                <input type="radio" name="my_tabs_1" className="tab" aria-label={`Card ${cardBuy.length}`} 
                  onClick={()=>setTabName('card')}
                 />
                 
                 </div>
             </div>
-            { tabName === 'card' &&  <BuyCardList />
+            { tabName === 'card' &&  <BuyCardList cardBuy={cardBuy} setCardBuy={setCardBuy} />
             }
             <div className='cardBox grid md:grid-cols-3 gap-3'>
                 
                 {
                   tabName === 'products' && 
-                    card.map(data => <Card key={data.name} data={data} />)
+                    card.map(data => <Card key={data.name} data={data} setCardBuy={setCardBuy} cardBuy={cardBuy} />)
                 }
 
             </div>
