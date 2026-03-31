@@ -23,7 +23,7 @@ function PremiumTools({cardData}) {
                  onClick={()=>setTabName('products')}
                  defaultChecked/>
 
-                <input type="radio" name="my_tabs_1" className="tab" aria-label={`Card ${cardBuy.length}`} 
+                <input type="radio" name="my_tabs_1" className="tab" aria-label={`Card (${cardBuy.length})`} 
                  onClick={()=>setTabName('card')}
                 />
                 

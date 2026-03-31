@@ -6,7 +6,14 @@ function Card({data, setCardBuy, cardBuy}) {
 
     const buyProduct = () =>{
         setIsBuy(true);
+
+        const isfound = cardBuy.find(item => item.name === data.name);
+        if(isfound){
+            alert('ase')
+            return
+        }
         setCardBuy([...cardBuy, data])
+        
     }
  
     return (
