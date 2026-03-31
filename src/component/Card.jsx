@@ -10,11 +10,11 @@ function Card({data, setCardBuy, cardBuy}) {
 
         const isfound = cardBuy.find(item => item.name === data.name);
         if(isfound){
-            toast('Already added!');
+            toast.error('Already added!');
             
             return
         }
-        toast('added!');
+        toast.success('Added to Card');
         setCardBuy([...cardBuy, data])
         
     }
@@ -22,7 +22,7 @@ function Card({data, setCardBuy, cardBuy}) {
     return (
          <div className="card w-96  shadow-sm bg-[#f9fafc] ">
                             <div className="card-body text-left  relative">
-                                <span className="badge badge-xs badge-warning absolute right-3 top-3">{data.tagType}</span> 
+                                <span className="badge p-2 badge-xs font-bold bg-[#fef3c6] absolute right-3 top-3">{data.tagType}</span> 
                                 <p className='text-3xl'>{data.icon}</p>
                                 <div className="space-y-5">
                                     <h2 className="text-3xl font-bold">{data.name}</h2>
@@ -50,8 +50,13 @@ function Card({data, setCardBuy, cardBuy}) {
                                 <div className="mt-6">
                                 <button 
                                 onClick={buyProduct}
-                                className={`btn  btn-block  rounded-full text-white ${isBuy? "bg-green-500" :"bg-linear-to-r from-[#4f39fb] to-[#9514fa]"}`}
-                                >{isBuy ?<p> <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg> Added to Card </p>: data.button }</button>
+                                className={`btn  btn-block  rounded-full text-white  ${isBuy ?
+                                         "bg-green-500" 
+                                         :"bg-linear-to-r from-[#4f39fb] to-[#9514fa] " } 
+                                    
+                                         `}>
+                                            {isBuy ?
+                                <p> <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg> Added to Card </p>: "Buy Now"}</button>
                                 </div>
                             </div>
                          </div>

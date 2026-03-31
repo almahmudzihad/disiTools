@@ -1,92 +1,101 @@
 [
   {
+    "id": 1,
     "name": "ProDesign Studio",
     "description": "Advanced design suite for creating stunning visuals and prototypes.",
     "price": 29,
-    "period": "per month",
-    "tagType": "Design",
-    "features": ["Drag-and-drop editor", "AI-powered templates", "Collaboration tools"],
-    "icon": "🎨",
-    "button": "Buy Now"
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "AI-powered design", "Collaboration tools"],
+    "icon": "🎨"
   },
   {
+    "id": 2,
     "name": "CodeMaster IDE",
     "description": "Powerful coding environment with real-time debugging and AI suggestions.",
     "price": 49,
-    "period": "per month",
-    "tagType": "Development",
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
     "features": ["Multi-language support", "Version control integration", "Smart autocomplete"],
-    "icon": "💻",
-    "button": "Buy Now"
+    "icon": "💻"
   },
   {
+    "id": 3,
     "name": "MarketGenius",
     "description": "Digital marketing automation tool to boost campaigns and track analytics.",
     "price": 39,
-    "period": "per month",
-    "tagType": "Marketing",
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
     "features": ["Email automation", "SEO insights", "Social media scheduler"],
-    "icon": "📈",
-    "button": "Buy Now"
+    "icon": "📈"
   },
   {
+    "id": 4,
     "name": "SecureVault",
     "description": "Enterprise-grade cloud storage with encryption and team sharing.",
-    "price": 19,
-    "period": "per month",
-    "tagType": "Storage",
+    "price": 99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
     "features": ["End-to-end encryption", "Unlimited file sharing", "Cross-device sync"],
-    "icon": "🔒",
-    "button": "Buy Now"
+    "icon": "🔒"
   },
   {
+    "id": 5,
     "name": "TaskFlow Pro",
     "description": "Project management tool to organize tasks and streamline workflows.",
     "price": 25,
-    "period": "per month",
-    "tagType": "Productivity",
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
     "features": ["Kanban boards", "Time tracking", "Team collaboration"],
-    "icon": "✅",
-    "button": "Buy Now"
+    "icon": "✅"
   },
   {
+    "id": 6,
     "name": "InsightAI",
     "description": "AI-powered analytics platform for smarter business decisions.",
     "price": 59,
-    "period": "per month",
-    "tagType": "Analytics",
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
     "features": ["Predictive insights", "Custom dashboards", "Data visualization"],
-    "icon": "🤖",
-    "button": "Buy Now"
+    "icon": "🤖"
   },
   {
+    "id": 7,
     "name": "ContentForge",
     "description": "AI-driven content creation tool for blogs, ads, and social media.",
     "price": 35,
-    "period": "per month",
-    "tagType": "Content",
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
     "features": ["SEO-friendly writing", "Ad copy generator", "Multilingual support"],
-    "icon": "📝",
-    "button": "Buy Now"
+    "icon": "📝"
   },
   {
+    "id": 8,
     "name": "VideoCraft Pro",
     "description": "Professional video editing and motion graphics software.",
     "price": 45,
-    "period": "per month",
-    "tagType": "Media",
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
     "features": ["HD/4K editing", "Motion templates", "Audio mixing"],
-    "icon": "🎬",
-    "button": "Buy Now"
+    "icon": "🎬"
   },
   {
+    "id": 9,
     "name": "SalesPilot CRM",
     "description": "Customer relationship management tool to track leads and boost sales.",
     "price": 55,
-    "period": "per month",
-    "tagType": "CRM",
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
     "features": ["Lead tracking", "Pipeline management", "Automated follow-ups"],
-    "icon": "📊",
-    "button": "Buy Now"
+    "icon": "📊"
   }
 ]

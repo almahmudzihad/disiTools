@@ -1,13 +1,17 @@
 import React from 'react'
+import { toast } from 'react-toastify';
 
 function BuyCardList({cardBuy, setCardBuy}) {
     const totalPrice = cardBuy.reduce((sum, item)=> sum + item.price, 0);
     const handelPayment = ()=>{
         setCardBuy([]);
+        toast.success('Proceed to Checkout');
+        
     }
     const handelDelete = (card) =>{
         const filterArray = cardBuy.filter(c => c.name !== card.name);
         setCardBuy(filterArray);
+        toast.error('Remove the item');
         
     }
     return (
@@ -21,27 +25,27 @@ function BuyCardList({cardBuy, setCardBuy}) {
                         :
                             <>
                             {
-                                    cardBuy.map(card =>
-                                            <div key={card.name} className='mt-2'>
-                                                <div className="card bg-[#f9fafc] card-xs shadow-sm">
-                                                    <div className="card-body flex-row justify-between">
-                                                        <div className='flex gap-3'>
-                                                            
-                                                                <span className='text-5xl'>{card.icon}</span>
-                                                            
-                                                            
-                                                            <div>
-                                                                <h2 className="text-xl font-bold">{card.name}</h2>
-                                                                <p className='py-2'>${card.price}</p>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <button 
-                                                        onClick={()=>handelDelete(card)}
-                                                        className="text-red-500 hover:font-bold">Remove</button>
+                                cardBuy.map(card =>
+                                    <div key={card.name} className='mt-2'>
+                                        <div className="card bg-[#f9fafc] card-xs shadow-sm">
+                                            <div className="card-body flex-row justify-between">
+                                                <div className='flex gap-3'>
+                                                    
+                                                        <span className='text-5xl'>{card.icon}</span>
+                                                    
+                                                    
+                                                    <div>
+                                                        <h2 className="text-xl font-bold">{card.name}</h2>
+                                                        <p className='py-2'>${card.price}</p>
                                                     </div>
                                                 </div>
+                                                
+                                                <button 
+                                                onClick={()=>handelDelete(card)}
+                                                className="text-red-500 hover:font-bold">Remove</button>
                                             </div>
+                                        </div>
+                                    </div>
                                     )
                                 }
                                 <div className='flex justify-between mt-4'>

@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div className='bg-[#101727]'>
             <div className='container mx-auto py-20'>
-                <footer className="footer sm:footer-horizontal  text-gray-300 py-10">
+                <footer className="footer sm:footer-horizontal  text-gray-300 py-10  ">
                     <div>
                         <h2 className='text-2xl text-white font-bold'>disiTools</h2>
                         <p>Premium digital tools for creators,<br></br> professionals, and businesses. Work smarter with<br></br> our suite of powerful tools.</p>

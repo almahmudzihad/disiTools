@@ -17,17 +17,17 @@ function PremiumTools({cardData}) {
                 <p className='text-gray-500 '>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
                 
             </div>
-            <div className='pb-6'>
-                <div className="tabs tabs-box justify-center bg-transparent">
-                <input type="radio" name="my_tabs_1" className="tab " aria-label="Products"
+            <div className='pb-6 flex items-center justify-center'>
+                <div className="tabs tabs-box  w-43 rounded-full ">
+                 <input type="radio" name="my_tabs_1" className={`tab rounded-full [--tab-bg:#933af1] ${tabName==='products'&&"text-white"}`} aria-label="Products"
                  onClick={()=>setTabName('products')}
                  defaultChecked/>
 
-                <input type="radio" name="my_tabs_1" className="tab" aria-label={`Card (${cardBuy.length})`} 
+                    <input type="radio" name="my_tabs_1" className={`tab rounded-full [--tab-bg:#933af1] ${tabName==='card'&&"text-white"}`} aria-label={`Card (${cardBuy.length})`} 
                  onClick={()=>setTabName('card')}
-                />
+                 />
                 
-                </div>
+                 </div>
             </div>
             { tabName === 'card' &&  <BuyCardList cardBuy={cardBuy} setCardBuy={setCardBuy} />
             }

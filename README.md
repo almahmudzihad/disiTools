@@ -1,110 +1,47 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-bg-linear-to-t from-sky-500 to-indigo-500
-
-bg-linear-to-t from-sky-500 to-indigo-500
-bg-linear-to-r from-[#4f39fb] to-[#9514fa]
-
-
-section titel & discr
-<div className='py-20 text-center'>
-     <h1 className='text-3xl font-bold py-4'>Get Started in 3 Steps</h1>
-      <p className='text-gray-500'>Start using premium digital tools in minutes, not hours.</p>
-
-
+<div className="navbar bg-base-100 shadow-sm">
+  <div className="flex-1">
+    <a className="btn btn-ghost text-xl">daisyUI</a>
   </div>
-
-
-
-  import { toast } from "react-toastify";
-
-const Cart = ({ carts, setCarts }) => {
-  const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
-
-  const handlePayment = () => {
-    setCarts([]);
-    toast.success("Payement successful!");
-  };
-
-  const handleDelete = (item) => {
-    const filteredArray = carts.filter((c) => c.id !== item.id);
-    setCarts(filteredArray);
-
-    
-
-    toast.success("Item deleted!");
-  };
-
-  return (
-    <div className=" p-10 max-w-7xl mx-auto">
-      <h1 className="text-2xl font-bold">Your Cart</h1>
-
-      {carts.length === 0 ? (
-        <p className="text-center text-2xl p-5">Cart is empty</p>
-      ) : (
-        <>
-          <div className="space-y-5 mt-4">
-            {carts.map((item) => (
-              <div
-                className="flex items-center justify-between border rounded-lg p-3"
-                key={item.id}
-              >
-                <div className="flex  items-center gap-2">
-                  <div>
-                    <img
-                      className="h-20 w-20 object-contain"
-                      src={item.image}
-                    />
-                  </div>
-
-                  <div>
-                    <h2 className="text-xl font-bold">{item.title}</h2>
-                  </div>
-                </div>
-
-                <div className="flex gap-10">
-                  <div className="text-3xl font-bold">${item.price}/month</div>
-
-                  <button
-                    onClick={() => handleDelete(item)}
-                    className=" btn rounded-full btn-error"
-                  >
-                    X
-                  </button>
-                </div>
-              </div>
-            ))}
+  <div className="flex-none">
+    <div className="dropdown dropdown-end">
+      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+        <div className="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+          <span className="badge badge-sm indicator-item">8</span>
+        </div>
+      </div>
+      <div
+        tabIndex={0}
+        className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+        <div className="card-body">
+          <span className="text-lg font-bold">8 Items</span>
+          <span className="text-info">Subtotal: $999</span>
+          <div className="card-actions">
+            <button className="btn btn-primary btn-block">View cart</button>
           </div>
-
-          <div className=" flex justify-between bg-black text-white p-5 mt-5 rounded-lg text-3xl font-bold">
-            <div>Total</div>
-            <div>$ {totalPrice}</div>
-          </div>
-
-          <button
-            onClick={handlePayment}
-            className="btn w-full mt-5 bg-red-500 text-white text-2xl  rounded-lg"
-          >
-            Proceed to Checkout
-          </button>
-        </>
-      )}
+        </div>
+      </div>
     </div>
-  );
-};
-
-export default Cart;
+    <div className="dropdown dropdown-end">
+      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img
+            alt="Tailwind CSS Navbar component"
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        </div>
+      </div>
+      <ul
+        tabIndex="-1"
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li>
+          <a className="justify-between">
+            Profile
+            <span className="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -47,7 +47,7 @@ function Pricing() {
                     <div className="card-item2 ">
                         <div className="card w-96 bg-linear-to-r from-[#4f39fb] to-[#9514fa] text-white shadow-sm">
                             <div className="card-body text-left">
-                                <span className="badge badge-xs badge-warning absolute top-[-10px] left-[40%]">Most Popular</span>
+                                <span className="badge badge-xs bg-[#fef3c6] p-3 absolute top-[-10px] left-[40%]">Most Popular</span>
                                 <div className="">
                                 <h2 className="text-3xl font-bold">Pro</h2>
                                 <span className="text-xl">$29</span><span className='text-gray-300'>/Month</span>
