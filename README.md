@@ -30,9 +30,6 @@ live link ; https://disitools-zihad.netlify.app/
 
 
 
-
-
-
 import { useState } from 'react'
 
 import './App.css'

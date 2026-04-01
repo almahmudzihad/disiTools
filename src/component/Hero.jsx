@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Hero() {
     return (
         <div>
@@ -10,7 +11,7 @@ function Hero() {
                 className="max-w-sm rounded-lg w-1/2 "
                 />
                 <div className='w-1/2 space-y-3'>
-                <p className='btn rounded-full text-[#a350fb] bg-[#e1e7ff]'>New: AI-Powered Tools Available</p>
+                <p className='btn rounded-full text-[#a350fb] bg-[#e1e7ff]'><img src="/miniicon.png" alt="New" /> AI-Powered Tools Available</p>
                 <h1 className="text-6xl font-bold">Supercharge Your <br/>Digital Workflow</h1>
                 <p className="py-3">Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products
                 </p>
